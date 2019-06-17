@@ -64,6 +64,18 @@ aTags.forEach(link => link.style.color = 'green')
 
 //Two new items created for the navigation system
 
+//
+//creates the main header section
+
+let mainHeading = document.querySelector('h1')
+mainHeading.textContent = siteContent['cta']['h1']
+
+let mainButton = document.querySelector('button')
+mainButton.innerText = "Get Started"
+
+let logo2 = document.querySelector("#cta-img")
+logo2.setAttribute('src', siteContent['cta']["img-src"])
+
 //creates the main content section
 let mainContent = document.querySelectorAll('.text-content');
 
@@ -77,3 +89,9 @@ mainContent[3].querySelector('h4').textContent = siteContent['main-content']['pr
 mainContent[3].querySelector('p').textContent = siteContent['main-content']['product-content']
 mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4']
 mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
+//sets the middle image in the main content area
+let logo3= document.querySelector("#middle-img")
+logo3.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//creates the contact section
+
