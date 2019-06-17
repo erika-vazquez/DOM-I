@@ -66,14 +66,13 @@ aTags.forEach(link => link.style.color = 'green')
 
 //
 //creates the main header section
-
 let mainHeading = document.querySelector('h1')
-mainHeading.textContent = siteContent['cta']['h1']
+mainHeading.textContent = siteContent['cta']['h1'];
 
-let mainButton = document.querySelector('button')
+let mainButton = document.querySelector('button');
 mainButton.innerText = "Get Started"
 
-let logo2 = document.querySelector("#cta-img")
+let logo2 = document.querySelector("#cta-img");
 logo2.setAttribute('src', siteContent['cta']["img-src"])
 
 //creates the main content section
@@ -90,13 +89,18 @@ mainContent[3].querySelector('p').textContent = siteContent['main-content']['pro
 mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4']
 mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
 //sets the middle image in the main content area
-let logo3= document.querySelector("#middle-img")
+let logo3= document.querySelector("#middle-img");
 logo3.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 //creates the contact section
-let contactInfo = document.querySelector('.contact') 
+let contactInfo = document.querySelector('.contact'); 
 
 contactInfo.getElementsByTagName('h4')[0].textContent = siteContent["contact"]["contact-h4"]
 contactInfo.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
 contactInfo.getElementsByTagName('p')[1].textContent = siteContent["contact"]["phone"]
 contactInfo.getElementsByTagName('p')[2].textContent = siteContent["contact"]["email"]
+
+//creating/setting the footer section
+let footer = document.querySelector('footer');
+
+footer.innerText = "Copyright Great Idea! 2018"
