@@ -116,3 +116,8 @@ contactInfo.getElementsByTagName('p')[2].textContent = siteContent["contact"]["e
 let footer = document.querySelector('footer');
 
 footer.innerText = "Copyright Great Idea! 2018"
+
+//Stretch goals
+//sets top-content section's background color to a brownish color
+document.querySelector(".top-content").style.backgroundColor = "#857e61";
+
