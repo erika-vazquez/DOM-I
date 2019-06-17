@@ -42,9 +42,8 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-//nav 
+//Creates navigation
 let aTags = document.querySelectorAll('a');
-
 
 aTags[0].setAttribute('class', '.nav-item-1')
 aTags[0].innerText = "Service"
@@ -63,8 +62,21 @@ aTags[5].innerText = "Product"
 aTags.forEach(link => link.style.color = 'green')
 
 //Two new items created for the navigation system
+const newA1 = document.createElement('a');
+const mainNav = document.querySelector('nav');
+newA1.innerText = 'Blog'
+newA1.href = '#'
+mainNav.prepend(newA1)
+newA1.style.color = 'red'
 
-//
+const newA2 = document.createElement('a');
+const mainNav2 = document.querySelector('nav');
+newA2.innerText = 'FAQ'
+newA2.href = '#'
+mainNav2.append(newA2)
+newA2.style.color = 'red'
+
+
 //creates the main header section
 let mainHeading = document.querySelector('h1')
 mainHeading.textContent = siteContent['cta']['h1'];
@@ -88,7 +100,7 @@ mainContent[3].querySelector('h4').textContent = siteContent['main-content']['pr
 mainContent[3].querySelector('p').textContent = siteContent['main-content']['product-content']
 mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4']
 mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
-//sets the middle image in the main content area
+//updates the middle image in the main content area
 let logo3= document.querySelector("#middle-img");
 logo3.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
